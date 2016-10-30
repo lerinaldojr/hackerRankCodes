@@ -1,0 +1,13 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+s,vowels,K,S = raw_input(),'AEIOU',0,0
+for i in xrange(len(s)):
+    if s[i] in vowels:
+        K += (len(s)-i) 
+    else:
+        S += (len(s)-i) 
+if K > S:
+    print "Kevin", K
+elif K < S:
+    print "Stuart", S
+else:
+    print "Draw"
